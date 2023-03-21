@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.navbar-brand {
+  font-size: 36px;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.navbar-menu {
+  display: flex;
+}
+
+.navbar-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-item {
+  margin-left: 16px;
+}
+
+.navbar-link {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar-link:hover {
+  color: #666;
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-item {
+    margin-left: 0;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('your-background-image-url.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-image {
+  position: absolute;
+  max-width: 65%;
+  height: auto;
+  z-index: -1;
+}
+
+
+.hero-content {
+  max-width: 800px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.hero-title {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: rgb(250, 0, 0);
+  color: rgb(255, 230, 0);
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: rgb(255, 2, 2);
+}
+
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+}
+
+.content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.content-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.content-item {
+  width: 30%;
+}
+
+.content-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .content-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-item {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+}
+.map-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.map-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.youtube-video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56%; /* アスペクト比 16:9 の場合 */
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.youtube-video-container iframe {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 50%;
+}
+
+.video-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.video-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.outlined-text {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  -webkit-text-stroke: 2px rgb(253, 8, 8); /* 文字の周囲の線の太さと色を指定 */
+  color: white; /* 文字の内部の色を指定 */
+}

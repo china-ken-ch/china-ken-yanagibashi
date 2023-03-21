@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yanagibashi Central Market Unofficial Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="#" class="navbar-brand">Yanagibashi Central Market</a>
+        <button class="navbar-toggler" id="navbar-toggler">
+          <span>≡</span>
+        </button>
+        <nav class="navbar-menu" id="navbar-menu">
+          <ul class="navbar-list">
+            <li class="navbar-item"><a href="#home" class="navbar-link">Home</a></li>
+            <li class="navbar-item"><a href="Instagram/Instagram.html" class="navbar-link">Instagram Link</a></li>
+            <li class="navbar-item"><a href="https://www.youtube.com/channel/UCKB0yHt5W6tMX66flsYFeSA" class="navbar-link">YouTube</a></li>
+            <li class="navbar-item"><a href="#access" class="navbar-link">Access</a></li>
+            <li class="navbar-item"><a href="http://www.marunaka-center.co.jp/schedule/" class="navbar-link">Schedule</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="outlined-text">Welcome to Yanagibashi Central Market</h1>
+      <p class="outlined-text">Introducing the charm of Yanagibashi Central Market</p>
+      <a href="http://www.marunaka-center.co.jp/" class="hero-button">Head to Marunaka Food Center</a>
+    </div>
+    <img src="top-photo.JPG" alt="Hero Image" class="hero-image">
+  </section>
+
+  <section id="Youtube" class="video-section">
+    <h2 class="video-title">YouTube</h2>
+  <div class="youtube-video-container">
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/j3C28YOXjA0" title="YouTube video player" ></iframe>
+  </div>
+</section>
+
+  <section id="about" class="content">
+    <h2 class="content-title">About us</h2>
+    <div class="content-grid">
+      <div class="content-item">
+        <img src="01fish.JPG" alt="Service 1" class="content-image">
+        <h3 class="content-subtitle">Seafood</h3>
+        <p class="content-text">Fresh and special fish are gathered from all over Japan, including Aichi where it is located.</p>
+      </div>
+      <div class="content-item">
+        <img src="03beji.JPG" alt="Service 2" class="content-image">
+        <h3 class="content-subtitle">Produce</h3>
+        <p class="content-text">They offer vegetables of the same quality used in fine dining restaurants.</p>
+      </div>
+      <div class="content-item">
+        <img src="02niku.JPG" alt="Service 3" class="content-image">
+        <h3 class="content-subtitle">Meat</h3>
+        <p class="content-text">There are various types of branded beef from different regions, such as Kobe beef and Nagoya Cochin chicken.</p>
+      </div>
+      <div class="content-item">
+        <img src="04insho.JPG" alt="Service 3" class="content-image">
+        <h3 class="content-subtitle">Restaurant</h3>
+        <p class="content-text">They offer delicious dishes made with ingredients from the market.</p>
+      </div>
+    </div>
+  </section>
+
+  <body>
+    <!-- ナビゲーションバーなど、他のページと共通の要素をここに配置 -->
+  
+    <section id="access" class="map-section">
+      <h2 class="map-title">Access to Yanagibashi Central Market</h2>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2273.119945191949!2d136.88906718790838!3d35.17069502234867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376deaaf9b03b%3A0xc1a310228281cab2!2z5p-z5qmL5Lit5aSu5biC5aC0!5e0!3m2!1sja!2sjp!4v1679233024431!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  
+    <!-- フッターなど、他のページと共通の要素をここに配置 -->
+  </body>
+  <script>
+    document.getElementById("navbar-toggler").addEventListener("click", function () {
+      document.getElementById("navbar-menu").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
